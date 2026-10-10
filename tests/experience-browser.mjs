@@ -1,0 +1,75 @@
+import {createRequire} from 'node:module';
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+const require=createRequire(process.env.PLAYWRIGHT_MODULE_PATH||import.meta.url);
+const {chromium}=require('playwright');
+const browser=await chromium.launch({channel:'chrome',headless:true,args:['--use-angle=swiftshader','--enable-unsafe-swiftshader']});
+const errors=[];fs.mkdirSync('test-results',{recursive:true});
+try{
+ const page=await browser.newPage({viewport:{width:1440,height:1050}});
+ page.on('pageerror',e=>errors.push(e.message));
+ await page.goto('http://127.0.0.1:5173/',{waitUntil:'networkidle'});
+ await page.locator('[data-model-ready="true"]').waitFor({timeout:30000});
+ await page.locator('#range-sleep').fill('5');
+ await page.getByRole('button',{name:'生成画像，开始我的实验'}).click();
+ assert.equal(await page.locator('[data-experience-step]').getAttribute('data-experience-step'),'1');
+ await page.locator('#range-sleep').fill('8');
+ assert.match(await page.locator('.experiment-difference').innerText(),/5 小时.*8 小时/s);
+ assert.equal(await page.locator('.dimension-connections article.connected').count(),3);
+ await page.getByRole('button',{name:'为什么会有关联？'}).click();
+ assert.match(await page.locator('.causal-evidence').innerText(),/情绪/);
+ await page.getByRole('button',{name:'比较两个未来',exact:true}).click();
+ await page.getByRole('button',{name:'30 天',exact:true}).click();
+ await page.locator('[data-model-ready="true"]').first().waitFor({timeout:30000});
+ assert.match(await page.locator('.result-story h3').innerText(),/90 小时睡眠机会/);
+ await page.getByRole('button',{name:'现在',exact:true}).click();
+ const facts=await page.locator('.branch-fact').allTextContents();assert.equal(facts[0],facts[1]);
+ await page.getByRole('button',{name:'30 天',exact:true}).click();
+ await page.reload({waitUntil:'networkidle'});
+ assert.match(await page.locator('.result-story h3').innerText(),/90 小时/);
+ await page.screenshot({path:'test-results/experiment-future.png',fullPage:true});
+ await page.getByRole('button',{name:'采用这个改变，生成七日计划'}).click();
+ assert.match(await page.locator('.goal-text strong').first().innerText(),/8 小时/);
+ await page.locator('.goal-card input').first().check();
+ await page.locator('.nav-item').filter({hasText:'我的改变实验'}).click();
+ await page.getByRole('button',{name:'返回，调整这一个改变'}).click();
+ await page.getByRole('button',{name:'运动',exact:true}).click();
+ await page.locator('#range-activity').fill('160');
+ await page.getByRole('button',{name:'比较两个未来',exact:true}).click();
+ await page.getByRole('button',{name:'7 天',exact:true}).click();
+ assert.match(await page.locator('.result-story h3').innerText(),/70 分钟/);
+ const stored=await page.evaluate(()=>JSON.parse(localStorage.getItem('future-you:v1')));
+ assert.equal(stored.run.baseline.sleep,5);assert.equal(stored.run.target.sleep,5);
+ await page.getByRole('button',{name:'采用这个改变，生成七日计划'}).click();
+ await page.getByRole('button',{name:'保留原计划',exact:true}).click();
+ assert.equal(await page.getByRole('button',{name:'确认替换计划'}).count(),0);
+ await page.getByRole('button',{name:'返回，调整这一个改变'}).click();
+ await page.getByRole('button',{name:'久坐',exact:true}).click();
+ await page.locator('#range-sitting').fill('7');
+ await page.getByRole('button',{name:'比较两个未来',exact:true}).click();
+ assert.match(await page.locator('.result-story h3').innerText(),/少安排 7 小时久坐/);
+ await page.getByRole('button',{name:'返回，调整这一个改变'}).click();
+ await page.getByRole('button',{name:'饮食',exact:true}).click();
+ await page.locator('#diet-choice').selectOption('balanced');
+ await page.getByRole('button',{name:'比较两个未来',exact:true}).click();
+ assert.equal(await page.locator('.dose-chart svg').count(),0);assert.equal(await page.locator('.food-comparison').count(),1);
+ await page.getByRole('button',{name:'返回，调整这一个改变'}).click();
+ await page.getByRole('button',{name:'睡眠',exact:true}).click();
+ await page.locator('#range-sleep').fill('4');
+ await page.getByRole('button',{name:'比较两个未来',exact:true}).click();
+ assert.equal(await page.getByRole('button',{name:'采用这个改变，生成七日计划'}).isEnabled(),false);
+ await page.getByRole('button',{name:'返回，调整这一个改变'}).click();
+ await page.locator('#range-sleep').fill('8');
+ await page.screenshot({path:'test-results/experiment-change.png',fullPage:true});
+ for(const width of [390,320]){
+  await page.setViewportSize({width,height:850});
+  for(const name of ['compare','input']){
+   if(name==='compare')await page.getByRole('button',{name:'比较两个未来',exact:true}).click();
+   else await page.getByRole('button',{name:'返回，调整这一个改变'}).click();
+   const size=await page.evaluate(()=>({w:innerWidth,s:document.documentElement.scrollWidth}));assert.ok(size.s<=size.w+1,`overflow ${width} ${name}`);
+   if(width===390&&name==='compare')await page.screenshot({path:'test-results/experiment-mobile.png',fullPage:true});
+  }
+ }
+ assert.deepEqual(errors,[]);
+ console.log(JSON.stringify({passed:true,checks:['immutable baseline and one-variable experiment','sleep links three systems and sourced mechanism','30-day sleep opportunity +90h','Now branches equal','reload preserves chosen experiment','selected target adopted into plan','all four experiments and correct time units','existing plan overwrite protected','adverse change not proposed as improvement','390px and 320px responsive'],pageErrors:errors},null,2));
+}finally{await browser.close();}
