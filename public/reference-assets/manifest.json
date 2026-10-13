@@ -1,0 +1,828 @@
+{
+  "brand": {
+    "source": "ChatGPT 图像 2026年10月13日 14_26_22-1.png",
+    "page": 1,
+    "box": [
+      54,
+      17,
+      202,
+      54
+    ],
+    "size": [
+      148,
+      37
+    ]
+  },
+  "avatar": {
+    "source": "ChatGPT 图像 2026年10月13日 14_26_22-1.png",
+    "page": 1,
+    "box": [
+      1508,
+      18,
+      1544,
+      55
+    ],
+    "size": [
+      36,
+      37
+    ]
+  },
+  "body-back": {
+    "source": "ChatGPT 图像 2026年10月13日 14_26_22-1.png",
+    "page": 1,
+    "box": [
+      398,
+      157,
+      879,
+      941
+    ],
+    "size": [
+      481,
+      784
+    ]
+  },
+  "lumbar-detail": {
+    "source": "ChatGPT 图像 2026年10月13日 14_26_22-1.png",
+    "page": 1,
+    "box": [
+      1372,
+      282,
+      1613,
+      436
+    ],
+    "size": [
+      241,
+      154
+    ]
+  },
+  "pelvis-detail": {
+    "source": "ChatGPT 图像 2026年10月13日 14_26_22-1.png",
+    "page": 1,
+    "box": [
+      1384,
+      505,
+      1613,
+      643
+    ],
+    "size": [
+      229,
+      138
+    ]
+  },
+  "disc-detail": {
+    "source": "ChatGPT 图像 2026年10月13日 14_26_22-1.png",
+    "page": 1,
+    "box": [
+      1362,
+      693,
+      1613,
+      823
+    ],
+    "size": [
+      251,
+      130
+    ]
+  },
+  "view-back": {
+    "source": "ChatGPT 图像 2026年10月13日 14_26_22-1.png",
+    "page": 1,
+    "box": [
+      72,
+      818,
+      142,
+      879
+    ],
+    "size": [
+      70,
+      61
+    ]
+  },
+  "view-front": {
+    "source": "ChatGPT 图像 2026年10月13日 14_26_22-1.png",
+    "page": 1,
+    "box": [
+      152,
+      818,
+      222,
+      879
+    ],
+    "size": [
+      70,
+      61
+    ]
+  },
+  "view-muscle": {
+    "source": "ChatGPT 图像 2026年10月13日 14_26_22-1.png",
+    "page": 1,
+    "box": [
+      232,
+      818,
+      302,
+      879
+    ],
+    "size": [
+      70,
+      61
+    ]
+  },
+  "view-bone": {
+    "source": "ChatGPT 图像 2026年10月13日 14_26_22-1.png",
+    "page": 1,
+    "box": [
+      312,
+      818,
+      382,
+      879
+    ],
+    "size": [
+      70,
+      61
+    ]
+  },
+  "view-nerve": {
+    "source": "ChatGPT 图像 2026年10月13日 14_26_22-1.png",
+    "page": 1,
+    "box": [
+      392,
+      818,
+      462,
+      879
+    ],
+    "size": [
+      70,
+      61
+    ]
+  },
+  "view-compare": {
+    "source": "ChatGPT 图像 2026年10月13日 14_26_22-1.png",
+    "page": 1,
+    "box": [
+      472,
+      818,
+      542,
+      879
+    ],
+    "size": [
+      70,
+      61
+    ]
+  },
+  "layer-skin": {
+    "source": "ChatGPT 图像 2026年10月13日 14_26_22-1.png",
+    "page": 1,
+    "box": [
+      79,
+      428,
+      113,
+      463
+    ],
+    "size": [
+      34,
+      35
+    ]
+  },
+  "layer-muscle": {
+    "source": "ChatGPT 图像 2026年10月13日 14_26_22-1.png",
+    "page": 1,
+    "box": [
+      79,
+      490,
+      113,
+      525
+    ],
+    "size": [
+      34,
+      35
+    ]
+  },
+  "layer-bone": {
+    "source": "ChatGPT 图像 2026年10月13日 14_26_22-1.png",
+    "page": 1,
+    "box": [
+      79,
+      552,
+      113,
+      587
+    ],
+    "size": [
+      34,
+      35
+    ]
+  },
+  "layer-ligament": {
+    "source": "ChatGPT 图像 2026年10月13日 14_26_22-1.png",
+    "page": 1,
+    "box": [
+      79,
+      614,
+      113,
+      649
+    ],
+    "size": [
+      34,
+      35
+    ]
+  },
+  "layer-disc": {
+    "source": "ChatGPT 图像 2026年10月13日 14_26_22-1.png",
+    "page": 1,
+    "box": [
+      79,
+      676,
+      113,
+      711
+    ],
+    "size": [
+      34,
+      35
+    ]
+  },
+  "layer-nerve": {
+    "source": "ChatGPT 图像 2026年10月13日 14_26_22-1.png",
+    "page": 1,
+    "box": [
+      79,
+      738,
+      113,
+      773
+    ],
+    "size": [
+      34,
+      35
+    ]
+  },
+  "spine-exploded": {
+    "source": "ChatGPT 图像 2026年10月13日 14_26_27-2.png",
+    "page": 2,
+    "box": [
+      310,
+      59,
+      1095,
+      625
+    ],
+    "size": [
+      785,
+      566
+    ]
+  },
+  "disc-cutaway": {
+    "source": "ChatGPT 图像 2026年10月13日 14_26_27-2.png",
+    "page": 2,
+    "box": [
+      1246,
+      267,
+      1501,
+      476
+    ],
+    "size": [
+      255,
+      209
+    ]
+  },
+  "piece-vertebra": {
+    "source": "ChatGPT 图像 2026年10月13日 14_26_27-2.png",
+    "page": 2,
+    "box": [
+      59,
+      758,
+      149,
+      855
+    ],
+    "size": [
+      90,
+      97
+    ]
+  },
+  "assembly-vertebra": {
+    "source": "ChatGPT 图像 2026年10月13日 14_26_27-2.png",
+    "page": 2,
+    "box": [
+      681,
+      783,
+      827,
+      896
+    ],
+    "size": [
+      146,
+      113
+    ]
+  },
+  "piece-disc": {
+    "source": "ChatGPT 图像 2026年10月13日 14_26_27-2.png",
+    "page": 2,
+    "box": [
+      174,
+      758,
+      264,
+      855
+    ],
+    "size": [
+      90,
+      97
+    ]
+  },
+  "assembly-disc": {
+    "source": "ChatGPT 图像 2026年10月13日 14_26_27-2.png",
+    "page": 2,
+    "box": [
+      875,
+      783,
+      1021,
+      896
+    ],
+    "size": [
+      146,
+      113
+    ]
+  },
+  "piece-ligament": {
+    "source": "ChatGPT 图像 2026年10月13日 14_26_27-2.png",
+    "page": 2,
+    "box": [
+      289,
+      758,
+      379,
+      855
+    ],
+    "size": [
+      90,
+      97
+    ]
+  },
+  "assembly-ligament": {
+    "source": "ChatGPT 图像 2026年10月13日 14_26_27-2.png",
+    "page": 2,
+    "box": [
+      1069,
+      783,
+      1215,
+      896
+    ],
+    "size": [
+      146,
+      113
+    ]
+  },
+  "piece-muscle": {
+    "source": "ChatGPT 图像 2026年10月13日 14_26_27-2.png",
+    "page": 2,
+    "box": [
+      404,
+      758,
+      494,
+      855
+    ],
+    "size": [
+      90,
+      97
+    ]
+  },
+  "assembly-muscle": {
+    "source": "ChatGPT 图像 2026年10月13日 14_26_27-2.png",
+    "page": 2,
+    "box": [
+      1263,
+      783,
+      1409,
+      896
+    ],
+    "size": [
+      146,
+      113
+    ]
+  },
+  "piece-nerve": {
+    "source": "ChatGPT 图像 2026年10月13日 14_26_27-2.png",
+    "page": 2,
+    "box": [
+      519,
+      758,
+      609,
+      855
+    ],
+    "size": [
+      90,
+      97
+    ]
+  },
+  "assembly-nerve": {
+    "source": "ChatGPT 图像 2026年10月13日 14_26_27-2.png",
+    "page": 2,
+    "box": [
+      1457,
+      783,
+      1603,
+      896
+    ],
+    "size": [
+      146,
+      113
+    ]
+  },
+  "posture-hero": {
+    "source": "ChatGPT 图像 2026年10月13日 14_26_33-3.png",
+    "page": 3,
+    "box": [
+      31,
+      252,
+      642,
+      788
+    ],
+    "size": [
+      611,
+      536
+    ]
+  },
+  "posture-standard": {
+    "source": "ChatGPT 图像 2026年10月13日 14_26_33-3.png",
+    "page": 3,
+    "box": [
+      688,
+      245,
+      763,
+      330
+    ],
+    "size": [
+      75,
+      85
+    ]
+  },
+  "posture-forward": {
+    "source": "ChatGPT 图像 2026年10月13日 14_26_33-3.png",
+    "page": 3,
+    "box": [
+      926,
+      245,
+      1001,
+      330
+    ],
+    "size": [
+      75,
+      85
+    ]
+  },
+  "posture-crossed": {
+    "source": "ChatGPT 图像 2026年10月13日 14_26_33-3.png",
+    "page": 3,
+    "box": [
+      1164,
+      245,
+      1239,
+      330
+    ],
+    "size": [
+      75,
+      85
+    ]
+  },
+  "posture-phone": {
+    "source": "ChatGPT 图像 2026年10月13日 14_26_33-3.png",
+    "page": 3,
+    "box": [
+      1402,
+      245,
+      1477,
+      330
+    ],
+    "size": [
+      75,
+      85
+    ]
+  },
+  "muscle-before": {
+    "source": "ChatGPT 图像 2026年10月13日 14_26_33-3.png",
+    "page": 3,
+    "box": [
+      686,
+      566,
+      821,
+      670
+    ],
+    "size": [
+      135,
+      104
+    ]
+  },
+  "muscle-after": {
+    "source": "ChatGPT 图像 2026年10月13日 14_26_33-3.png",
+    "page": 3,
+    "box": [
+      834,
+      566,
+      970,
+      670
+    ],
+    "size": [
+      136,
+      104
+    ]
+  },
+  "disc-before": {
+    "source": "ChatGPT 图像 2026年10月13日 14_26_33-3.png",
+    "page": 3,
+    "box": [
+      1011,
+      566,
+      1146,
+      670
+    ],
+    "size": [
+      135,
+      104
+    ]
+  },
+  "disc-after": {
+    "source": "ChatGPT 图像 2026年10月13日 14_26_33-3.png",
+    "page": 3,
+    "box": [
+      1160,
+      566,
+      1296,
+      670
+    ],
+    "size": [
+      136,
+      104
+    ]
+  },
+  "pelvis-before": {
+    "source": "ChatGPT 图像 2026年10月13日 14_26_33-3.png",
+    "page": 3,
+    "box": [
+      1338,
+      566,
+      1474,
+      670
+    ],
+    "size": [
+      136,
+      104
+    ]
+  },
+  "pelvis-after": {
+    "source": "ChatGPT 图像 2026年10月13日 14_26_33-3.png",
+    "page": 3,
+    "box": [
+      1488,
+      566,
+      1623,
+      670
+    ],
+    "size": [
+      135,
+      104
+    ]
+  },
+  "walking-banner": {
+    "source": "ChatGPT 图像 2026年10月13日 14_26_33-3.png",
+    "page": 3,
+    "box": [
+      1421,
+      811,
+      1647,
+      921
+    ],
+    "size": [
+      226,
+      110
+    ]
+  },
+  "body-tense": {
+    "source": "ChatGPT 图像 2026年10月13日 14_26_37-4.png",
+    "page": 4,
+    "box": [
+      625,
+      333,
+      848,
+      726
+    ],
+    "size": [
+      223,
+      393
+    ]
+  },
+  "body-relaxed": {
+    "source": "ChatGPT 图像 2026年10月13日 14_26_37-4.png",
+    "page": 4,
+    "box": [
+      875,
+      333,
+      1096,
+      726
+    ],
+    "size": [
+      221,
+      393
+    ]
+  },
+  "walking-person": {
+    "source": "ChatGPT 图像 2026年10月13日 14_26_37-4.png",
+    "page": 4,
+    "box": [
+      1145,
+      314,
+      1430,
+      618
+    ],
+    "size": [
+      285,
+      304
+    ]
+  },
+  "movement-walk": {
+    "source": "ChatGPT 图像 2026年10月13日 14_26_37-4.png",
+    "page": 4,
+    "box": [
+      77,
+      562,
+      181,
+      638
+    ],
+    "size": [
+      104,
+      76
+    ]
+  },
+  "movement-stretch": {
+    "source": "ChatGPT 图像 2026年10月13日 14_26_37-4.png",
+    "page": 4,
+    "box": [
+      77,
+      642,
+      181,
+      718
+    ],
+    "size": [
+      104,
+      76
+    ]
+  },
+  "movement-rotate": {
+    "source": "ChatGPT 图像 2026年10月13日 14_26_37-4.png",
+    "page": 4,
+    "box": [
+      77,
+      722,
+      181,
+      798
+    ],
+    "size": [
+      104,
+      76
+    ]
+  },
+  "movement-shoulder": {
+    "source": "ChatGPT 图像 2026年10月13日 14_26_37-4.png",
+    "page": 4,
+    "box": [
+      77,
+      802,
+      181,
+      878
+    ],
+    "size": [
+      104,
+      76
+    ]
+  },
+  "quiz-stretch": {
+    "source": "ChatGPT 图像 2026年10月13日 14_26_41-5.png",
+    "page": 5,
+    "box": [
+      625,
+      344,
+      1118,
+      822
+    ],
+    "size": [
+      493,
+      478
+    ]
+  },
+  "quiz-erector": {
+    "source": "ChatGPT 图像 2026年10月13日 14_26_41-5.png",
+    "page": 5,
+    "box": [
+      1166,
+      335,
+      1394,
+      663
+    ],
+    "size": [
+      228,
+      328
+    ]
+  },
+  "quiz-trapezius": {
+    "source": "ChatGPT 图像 2026年10月13日 14_26_41-5.png",
+    "page": 5,
+    "box": [
+      1403,
+      335,
+      1629,
+      663
+    ],
+    "size": [
+      226,
+      328
+    ]
+  },
+  "plan-hero": {
+    "source": "ChatGPT 图像 2026年10月13日 14_26_46-6.png",
+    "page": 6,
+    "box": [
+      538,
+      67,
+      1672,
+      444
+    ],
+    "size": [
+      1134,
+      377
+    ]
+  },
+  "exercise-neck": {
+    "source": "ChatGPT 图像 2026年10月13日 14_26_46-6.png",
+    "page": 6,
+    "box": [
+      905,
+      569,
+      1042,
+      785
+    ],
+    "size": [
+      137,
+      216
+    ]
+  },
+  "exercise-shoulder": {
+    "source": "ChatGPT 图像 2026年10月13日 14_26_46-6.png",
+    "page": 6,
+    "box": [
+      1059,
+      569,
+      1196,
+      785
+    ],
+    "size": [
+      137,
+      216
+    ]
+  },
+  "exercise-side": {
+    "source": "ChatGPT 图像 2026年10月13日 14_26_46-6.png",
+    "page": 6,
+    "box": [
+      1213,
+      569,
+      1350,
+      785
+    ],
+    "size": [
+      137,
+      216
+    ]
+  },
+  "exercise-squat": {
+    "source": "ChatGPT 图像 2026年10月13日 14_26_46-6.png",
+    "page": 6,
+    "box": [
+      1367,
+      569,
+      1504,
+      785
+    ],
+    "size": [
+      137,
+      216
+    ]
+  },
+  "exercise-twist": {
+    "source": "ChatGPT 图像 2026年10月13日 14_26_46-6.png",
+    "page": 6,
+    "box": [
+      1521,
+      569,
+      1658,
+      785
+    ],
+    "size": [
+      137,
+      216
+    ]
+  },
+  "user-avatar": {
+    "source": "ChatGPT 图像 2026年10月13日 14_26_46-6.png",
+    "page": 6,
+    "box": [
+      1498,
+      20,
+      1537,
+      56
+    ],
+    "size": [
+      39,
+      36
+    ]
+  }
+}

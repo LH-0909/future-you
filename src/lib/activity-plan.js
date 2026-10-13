@@ -1,0 +1,4 @@
+export const ACTIVITY_IDS = ['walk','stretch','water','gentle'];
+export function normalizeSegments(value){return Array.from({length:4},(_,i)=>({movement:[0,2,5].includes(value?.[i]?.movement)?value[i].movement:0,activity:ACTIVITY_IDS.includes(value?.[i]?.activity)?value[i].activity:'walk'}));}
+/** Four consecutive 45-minute blocks. An activity replaces the end of its block, never adds a hidden gap. */
+export function calculateActivityPlan(value){const segments=normalizeSegments(value);let run=0,longestSitting=0,movementMinutes=0;for(const s of segments){run+=45-s.movement;longestSitting=Math.max(longestSitting,run);movementMinutes+=s.movement;if(s.movement>0)run=0;}return {segments,sittingMinutes:180-movementMinutes,movementMinutes,longestSitting,baselineLongestSitting:180,reduction:180-longestSitting};}

@@ -23,4 +23,8 @@ Future You adaptations: retain 1,023 selected BodyParts3D structures and 27 HRA 
 
 The final model has 757,622 triangles. Compressed model data is 12,268,503 bytes. `anatomy-preview.png` is a screenshot rendered from the same adapted model for the lightweight view, under the same attribution requirements.
 
+Lumbar explorer adaptation: `spine.json` / `spine.bin` extract 13 distinct BodyParts3D source structures from the same pinned Human Atlas distribution, without the additional whole-body batch simplification: five lumbar vertebrae, five lumbar disks, sacrum and left/right hip bones. Source names and FMA identifiers are retained. Display materials and Chinese labels are authored for this lesson. Exploded viewing translates rigid meshes only; it does not deform source anatomy or calculate biomechanical motion. The extracted model has 34,550 triangles and 901,968 binary bytes, under the same CC BY 4.0 attribution.
+
+Unified teaching-body adaptation: `teaching-body.json` / `teaching-body.bin` extract 22 source meshes (T10–T12, L1–L5, five lumbar disks, sacrum, hip bones and six lumbar muscle meshes), 48,120 triangles and 1,316,512 bytes. Geometry is not additionally simplified. Rigid teaching poses, movement outlines, assembly targets and display colors are application adaptations, not measured anatomy or biomechanical results. License remains CC BY 4.0.
+
 This educational reference is not a patient scan, clinical digital twin, diagnostic model, or surgical planning tool. It does not cover all human anatomical variation. The application code, lifestyle rules and interface are authored separately from the model data.

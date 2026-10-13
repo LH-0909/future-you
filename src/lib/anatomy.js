@@ -1,17 +1,18 @@
 import * as THREE from 'three';
+import {assetUrl} from './asset-url.js';
 let cached;
 export function loadAnatomy(){
   if(!cached)cached=(async()=>{
-    const res=await fetch('/models/anatomy.json');if(!res.ok)throw new Error('Anatomy manifest failed');
+    const res=await fetch(assetUrl('/models/anatomy.json'));if(!res.ok)throw new Error('Anatomy manifest failed');
     const manifest=await res.json();
-    const response=await fetch(manifest.gzip);if(!response.ok)throw new Error('Anatomy geometry failed');
+    const response=await fetch(assetUrl(manifest.gzip));if(!response.ok)throw new Error('Anatomy geometry failed');
     let buffer=await response.arrayBuffer();
     const signature=new Uint8Array(buffer,0,Math.min(buffer.byteLength,2));
     // Some static servers send Content-Encoding:gzip and Fetch decompresses
     // automatically. Other hosts serve a gzip file as ordinary binary data.
     if(signature[0]===31&&signature[1]===139){
       if(typeof DecompressionStream!=='undefined')buffer=await new Response(new Blob([buffer]).stream().pipeThrough(new DecompressionStream('gzip'))).arrayBuffer();
-      else{const fallback=await fetch(manifest.binary);if(!fallback.ok)throw new Error('Anatomy geometry failed');buffer=await fallback.arrayBuffer();}
+      else{const fallback=await fetch(assetUrl(manifest.binary));if(!fallback.ok)throw new Error('Anatomy geometry failed');buffer=await fallback.arrayBuffer();}
     }
     if(buffer.byteLength!==manifest.bytes)throw new Error('Anatomy geometry incomplete');
     return {manifest,buffer};
